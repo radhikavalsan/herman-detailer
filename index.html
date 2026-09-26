@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Herman Detailer - Premium Car Detailing</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -96,142 +97,106 @@
     </section>
 
     <!-- Gallery Section -->
-    <!--<section id="gallery" class="gallery">
-        <div class="container">
-            <h2>Our Work Gallery</h2>
-            <p class="gallery-subtitle">See the transformation we've made to vehicles like yours</p>
+    <!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <div class="container">
 
-           
-            <div class="filter-buttons">
-                <button class="filter-btn active" onclick="filterGallery('all')">All</button>
-                <button class="filter-btn" onclick="filterGallery('ppf')">PPF</button>
-                <button class="filter-btn" onclick="filterGallery('wrapping')">Wrapping</button>
-                <button class="filter-btn" onclick="filterGallery('ceramic')">Ceramic</button>
-                <button class="filter-btn" onclick="filterGallery('polishing')">Polishing</button>
-                <button class="filter-btn" onclick="filterGallery('tinting')">Tinting</button>
-            </div>
+        <h2>Our Work Gallery</h2>
+        <p class="gallery-subtitle">
+            See the transformations we've made to vehicles like yours
+        </p>
 
-           
-            <div class="gallery-grid">
-                
-                <div class="gallery-item" data-category="ppf">
-                    <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300?text=PPF+Paint+Protection+1"
-                            alt="Paint Protection Film">
-                        <div class="gallery-overlay">
-                            <h3>Paint Protection Film</h3>
-                            <p>Full front end PPF application</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active"
+                    onclick="filterGallery('all')">
+                All
+            </button>
 
-                <div class="gallery-item" data-category="ppf">
-                    <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300?text=PPF+Paint+Protection+2"
-                            alt="Paint Protection Film">
-                        <div class="gallery-overlay">
-                            <h3>Complete PPF Wrap</h3>
-                            <p>Full body PPF protection</p>
-                        </div>
-                    </div>
-                </div>
+            <button class="filter-btn"
+                    onclick="filterGallery('ppf')">
+                PPF
+            </button>
 
-                
-                <div class="gallery-item" data-category="wrapping">
-                    <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300?text=Vehicle+Wrap+1" alt="Vehicle Wrapping">
-                        <div class="gallery-overlay">
-                            <h3>Matte Black Wrap</h3>
-                            <p>Stunning matte finish transformation</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="wrapping">
-                    <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300?text=Vehicle+Wrap+2" alt="Vehicle Wrapping">
-                        <div class="gallery-overlay">
-                            <h3>Custom Design Wrap</h3>
-                            <p>Personalized vinyl wrap design</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="wrapping">
-                    <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300?text=Vehicle+Wrap+3" alt="Vehicle Wrapping">
-                        <div class="gallery-overlay">
-                            <h3>Gloss Red Wrap</h3>
-                            <p>Eye-catching gloss vinyl wrap</p>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="gallery-item" data-category="ceramic">
-                    <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300?text=Ceramic+Coating+1" alt="Ceramic Coating">
-                        <div class="gallery-overlay">
-                            <h3>Ceramic Coated</h3>
-                            <p>Mirror-like ceramic finish</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="ceramic">
-                    <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300?text=Ceramic+Coating+2" alt="Ceramic Coating">
-                        <div class="gallery-overlay">
-                            <h3>Water Beading</h3>
-                            <p>Superior water repellency</p>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="gallery-item" data-category="polishing">
-                    <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300?text=Paint+Correction+1" alt="Paint Polishing">
-                        <div class="gallery-overlay">
-                            <h3>Paint Correction</h3>
-                            <p>Swirl mark removal</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="polishing">
-                    <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300?text=Paint+Correction+2" alt="Paint Polishing">
-                        <div class="gallery-overlay">
-                            <h3>Mirror Polish</h3>
-                            <p>Showroom quality finish</p>
-                        </div>
-                    </div>
-                </div>
-
-               
-                <div class="gallery-item" data-category="tinting">
-                    <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300?text=Window+Tinting+1" alt="Window Tinting">
-                        <div class="gallery-overlay">
-                            <h3>Premium Tinting</h3>
-                            <p>Professional window tinting</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="tinting">
-                    <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300?text=Window+Tinting+2" alt="Window Tinting">
-                        <div class="gallery-overlay">
-                            <h3>Heat Rejection</h3>
-                            <p>UV protective film installation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <button class="filter-btn"
+                    onclick="filterGallery('sunfilm')">
+                Sunfilm
+            </button>
         </div>
-    </section>-->
+
+        <!-- YouTube Shorts Gallery -->
+        <div class="gallery-grid">
+
+            <!-- PPF Video 1 -->
+            <div class="gallery-item active"
+                 data-category="ppf">
+
+                <div class="gallery-image">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rt8eTcNcUQM?si=Mq6Z1o5-RiKr6IPn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="gallery-caption">
+                    <h3>Paint Protection Film</h3>
+                    <p>Premium PPF installation</p>
+                </div>
+            </div>
+
+
+            <!-- PPF Video 2 -->
+            <div class="gallery-item active"
+                 data-category="ppf">
+
+                <div class="gallery-image">
+                   <iframe
+    src="https://www.youtube.com/embed/_ydP95U9V7Y?si=czb3wrrh0Z8v8SCL"
+    title="Herman Detailer PPF"
+    width="100%"
+    height="100%"
+    referrerpolicy="strict-origin"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+</iframe>
+   </div>
+
+                <div class="gallery-caption">
+                    <h3>Premium PPF</h3>
+                    <p>Protecting your vehicle's paint</p>
+                </div>
+            </div>
+
+
+            <!-- PPF Video 3 -->
+            <div class="gallery-item active"
+                 data-category="ppf">
+
+                <div class="gallery-image">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3fJ04ktK7lM?si=kQt_LTaVobFhbuBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="gallery-caption">
+                    <h3>PPF Paint Protection</h3>
+                    <p>Long-lasting paint protection</p>
+                </div>
+            </div>
+
+
+            <!-- Sunfilm Video -->
+            <div class="gallery-item active"
+                 data-category="sunfilm">
+
+                <div class="gallery-image">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/LhMtKvTvWVY?si=FtRFzyjDkW62h8ff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="gallery-caption">
+                    <h3>Premium Sunfilm</h3>
+                    <p>Professional sunfilm installation</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <!-- Why Choose Us Section -->
     <section class="why-choose">

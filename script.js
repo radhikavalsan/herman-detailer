@@ -37,18 +37,30 @@ function scrollToContact() {
     }
 }
 
-// Gallery Filter Function
+// ============================================
+// GALLERY FILTER FUNCTION
+// ============================================
+
 function filterGallery(category) {
     const items = document.querySelectorAll('.gallery-item');
     const buttons = document.querySelectorAll('.filter-btn');
 
-    // Update active button
-    buttons.forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+    // Update active filter button
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
 
-    // Filter items
+        const onclickValue = btn.getAttribute('onclick');
+
+        if (onclickValue === `filterGallery('${category}')`) {
+            btn.classList.add('active');
+        }
+    });
+
+    // Filter gallery videos
     items.forEach(item => {
-        if (category === 'all' || item.dataset.category === category) {
+        const itemCategory = item.dataset.category;
+
+        if (category === 'all' || itemCategory === category) {
             item.classList.add('active');
         } else {
             item.classList.remove('active');
@@ -56,10 +68,12 @@ function filterGallery(category) {
     });
 }
 
-// Initialize gallery - show all on page load
+// ============================================
+// INITIALIZE GALLERY
+// ============================================
+
 document.addEventListener('DOMContentLoaded', () => {
-    const items = document.querySelectorAll('.gallery-item');
-    items.forEach(item => item.classList.add('active'));
+    filterGallery('all');
 });
 
 // Form Submission
